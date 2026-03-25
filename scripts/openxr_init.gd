@@ -1,11 +1,7 @@
-extends Node
+extends Node3D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _ready():
+	var xr_iface = XRServer.find_interface("OpenXR")
+	if xr_iface and xr_iface.is_initialized():
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
+		get_viewport().use_xr = true
