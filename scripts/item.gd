@@ -6,6 +6,7 @@ extends RigidBody3D
 var locked: bool = false
 
 func _ready() -> void:
+	freeze_mode = RigidBody3D.FREEZE_MODE_KINEMATIC
 	grab_area.body_entered.connect(_on_body_entered)
 	grab_area.body_exited.connect(_on_body_exited)
 
