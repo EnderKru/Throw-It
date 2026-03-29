@@ -30,7 +30,7 @@ throw → score** (k. without scores yet).
 
 ## Screenshots
 
-![VR Scene Overview](screenshots/photo_2026-03-29_10-27-59.jpg)
+![VR Scene Overview](/screenshots/photo_2026-03-29_10-27-59.jpg)
 
 ---
 
